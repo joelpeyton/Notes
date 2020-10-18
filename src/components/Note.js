@@ -123,8 +123,8 @@ function Note(props) {
       </Card.Body>
 
       <Card.Footer>
-        <Button variant="primary" className="mr-3" onClick={handleShow}>Edit</Button>
-        <Button variant="danger" onClick={handleDelete}>Delete</Button>
+        <Button variant="outline-primary" className="mr-3" onClick={handleShow}>Edit</Button>
+        <Button variant="outline-danger" onClick={handleDelete}>Delete</Button>
       </Card.Footer>
     </Card>
 

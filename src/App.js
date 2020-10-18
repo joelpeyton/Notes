@@ -82,7 +82,7 @@ function App(props) {
 
         <Row>
           <Col sm={12}>
-            <Button variant="success" className="mt-3 mb-3" onClick={addNote}>New Note</Button>
+            <Button variant="success" className="mb-3 mr-3" onClick={addNote}>New Note</Button>
           </Col>
         </Row>
 
