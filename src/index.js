@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { nanoid } from 'nanoid';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+
+const DATA = localStorage.DATA ? JSON.parse(localStorage.DATA) : [{
+  id: nanoid(), 
+  title: "My first note", 
+  text: "Press the edit button to change the note title, note content and heading colour.",
+  headingColour: "#ecf0f1"
+}];
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App notes={DATA}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

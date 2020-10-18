@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input, 
+textarea {
+  width: 100%;
+}
+
+.square {
+  margin-right: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.selectedSquare {
+  border: 2px solid #555;
+}
