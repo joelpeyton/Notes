@@ -7,11 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 input, 
 textarea {
   width: 100%;
@@ -19,8 +14,8 @@ textarea {
 
 .square {
   margin-right: 0.25rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: inline-block;
   cursor: pointer;
 }

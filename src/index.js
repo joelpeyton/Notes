@@ -4,7 +4,8 @@ import { nanoid } from 'nanoid';
 import './index.css';
 import App from './App';
 
-
+// use localStorage to store notes
+// or if first time use default note
 const DATA = localStorage.DATA ? JSON.parse(localStorage.DATA) : [{
   id: nanoid(), 
   title: "My first note", 
